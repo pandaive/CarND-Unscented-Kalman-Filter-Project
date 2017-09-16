@@ -104,6 +104,8 @@ public:
   void UpdateRadar(MeasurementPackage meas_package);
 
   double NormalizeAngle(double angle);
+
+  void Update(const bool &lidar, const int &n_z, const MatrixXd &R, const VectorXd &z);
 };
 
 #endif /* UKF_H */
